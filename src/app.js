@@ -15,7 +15,6 @@ const partials = path.join(__dirname, '../views/partials')
 app.set('views', viewpath)
 app.set('view engine', 'hbs')
 hbs.registerPartials(partials)
-
 //Setup staitc directory to server
 app.use(express.static(publicPath))
 
